@@ -4,8 +4,21 @@ This code simulates proton-electron collisions using Pythia8 and saves in HepMC 
 
 ## Installation
 
-To run this code, you need to install [Pythia8](https://pythia.org/), a program for the generation of high-energy physics collision events. You can download the latest version of Pythia8 from [here](https://pythia.org/download/pythia83/pythia8306.tgz) and follow the installation instructions on the front page. 
-For this code version 8.306 was used. 
+To run this code, you need to install [Pythia8](https://pythia.org/), a program for the generation of high-energy physics collision events. You can download Pythia8 using:
+```
+git clone git@gitlab.com:Pythia8/releases.git --branch pythia8XXX --single-branch
+```
+where XXX is the PYTHIA version number. You can find the list of Pythia8 releases [here](https://pythia.org/releases/). For this code version 8.306 was used. 
+This will download zip `pythia8306.tgz`. Unzip and expand it with:
+```
+ tar xvfz pythia8306.tgz.
+```
+Move to the thus created pythia8306 directory, configure adding the hepmc3 package, and compile:
+```
+cd pythia8306
+./configure --with-hepmc3
+make
+```
 
 ## Usage
 
