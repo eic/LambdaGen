@@ -15,7 +15,7 @@ cd releases
 ./configure --with-hepmc3
 make
 cd bin
-export LD_LIBRARY_PATH=$(pythia8-config --libdir):${LD_LIBRARY_PATH}
+export LD_LIBRARY_PATH=$(./pythia8-config --libdir):${LD_LIBRARY_PATH}
 cd ../../
 ```
 
