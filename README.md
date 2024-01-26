@@ -23,7 +23,7 @@ cd ../../
 ```
 git clone https://gitlab.com/eic/LambdaGen.git --branch pythia8.306-1.0 --single-branch
 cd LambdaGen
-g++ main41_Lam.cc -o main41_Lam `pythia8-config --cflags --libs --hepmc3`
+g++ main41_Lam.cc -o main41_Lam `pythia8-config --cxxflags --libs --hepmc3`
 ```
 
 ## Usage
