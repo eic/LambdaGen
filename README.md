@@ -6,12 +6,10 @@ This code simulates proton-electron collisions using Pythia8 and saves in HepMC 
 
 1) Get and run [eic-shell](https://eic.github.io/tutorial-setting-up-environment/02-eic-shell/index.html)
 
-2) Clone and make Pythia8.306
+2) Clone and make pythia<Version>
 ```
-mkdir Pythia8306
-cd Pythia8306
-git clone https://gitlab.com/Pythia8/releases.git --branch pythia8306
-cd releases
+git clone https://gitlab.com/Pythia8/releases.git --branch <pythia_version> <pythia_version>
+cd <pythia_version>
 ./configure --with-hepmc3
 make
 cd bin
@@ -21,10 +19,13 @@ cd ../../
 
 3) Clone and compile LambdaGen against Pythia
 ```
-git clone https://gitlab.com/eic/LambdaGen.git --branch pythia8.306-1.0 --single-branch
+git clone https://gitlab.com/eic/LambdaGen.git --branch <LambdaGen_version> --single-branch
 cd LambdaGen
 g++ main41_Lam.cc -o main41_Lam `pythia8-config --cxxflags --libs --hepmc3`
 ```
+
+For example:
+<LamdaGen_version> = pythia8.306-1.0 corresponds to <pythia_version> = pythia8306
 
 ## Usage
 
