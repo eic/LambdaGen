@@ -10,7 +10,7 @@ This code simulates proton-electron collisions using Pythia8 and saves in HepMC 
 ```
 mkdir Pythia8306
 cd Pythia8306
-git clone https://gitlab.com/Pythia8/releases.git --branch pythia8306 --single-branch
+git clone https://gitlab.com/Pythia8/releases.git --branch pythia8306
 cd releases
 ./configure --with-hepmc3
 make
