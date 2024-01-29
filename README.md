@@ -25,7 +25,7 @@ g++ main41_Lam.cc -o main41_Lam `pythia8-config --cxxflags --libs --hepmc3`
 ```
 
 For example:
-<LamdaGen_version> = pythia8.306-1.0 corresponds to <pythia_version> = pythia8306
+<LambdaGen_version> = pythia8.306-1.0 corresponds to <pythia_version> = pythia8306
 
 ## Usage
 
